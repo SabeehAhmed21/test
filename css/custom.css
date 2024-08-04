@@ -150,7 +150,7 @@ section.banenr-sec .container-fluid {
 section.banenr-sec .row {
   display: flex;
   align-items: center;
-  margin-top: -3rem;
+  /* margin-top: -3rem; */
 }
 
 .banner-txt h4 {
@@ -219,6 +219,7 @@ section.monetize-sec {
   font-weight: 500;
   font-family: "Outfit", sans-serif;
   opacity: 1;
+  margin-bottom: 1.25rem;
 }
 
 .monetize-blk p {
@@ -233,7 +234,9 @@ section.google-publish .row {
 }
 
 .google-publish-img img {
-  width: 60%;
+  /* width: 60%; */
+  border-radius: 8px; /* Adjust border radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .google-publish-img {
@@ -478,7 +481,9 @@ section.adx-sec {
 }
 
 section.adsense-sec {
-  padding: 70px 0;
+  /* padding: 12.25rem 0; */
+  padding-bottom: 12.25rem;
+  padding-top: 6.25rem;
 }
 
 section.adsense-sec h4 {
@@ -3826,7 +3831,7 @@ section.advert-partner {
 
 .expertise-list-mobile-blk {
   display: inline-block;
-  width: 39%;
+  width: 40%;
   background: #1e5aac;
   margin: 0 20px 40px;
   padding: 25px 10px;
@@ -4111,7 +4116,7 @@ section.advert-partner {
   }
 
   .monetize-blk {
-    min-height: 290px;
+    min-height: 100%;
   }
 
   .header-btns .login {
@@ -5057,6 +5062,15 @@ section.advert-partner {
   }
 }
 
+@media only screen and (max-width: 797px) {
+  section.banenr-sec .row {
+    margin-top: 5rem !important;
+  }
+  .banner-txt a {
+    margin: 0 !important;
+  }
+}
+
 @media only screen and (max-width: 520px) {
   .about-banner-txt h4 {
     font-size: 26px;
@@ -5133,6 +5147,9 @@ section.advert-partner {
 }
 
 @media only screen and (max-width: 480px) {
+  .google-publish-img img {
+    width: 90% !important;
+  }
   .subscribe-txt input {
     width: 55%;
   }
